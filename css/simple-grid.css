@@ -1,0 +1,378 @@
+/**
+*** SIMPLE GRID
+*** (C) ZACH COLE 2016
+**/
+
+/* UNIVERSAL */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+}
+
+/* POSITIONING */
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center,
+.center-sm {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.justify {
+  text-align: justify;
+}
+
+/* ==== GRID SYSTEM ==== */
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 8px 2%;
+  min-height: 2px;
+}
+
+[class^="n-col"] {
+  float: left;
+  min-height: 2px;
+}
+
+[class^="n-col-1"]:first-of-type {
+  margin-left: 0;
+}
+
+[class^="n-col-5"]:last-of-type {
+  margin-right: 0;
+}
+
+.n-col-1,
+.n-col-2,
+.n-col-3,
+.n-col-4,
+.n-col-5,
+.n-col-6 {
+  width: 100%;
+  margin: 8px 0;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 96%;
+}
+
+.col-1-sm {
+  width: 4.33%;
+}
+
+.col-2-sm {
+  width: 12.66%;
+}
+
+.col-3-sm {
+  width: 21%;
+}
+
+.col-4-sm {
+  width: 29.33%;
+}
+
+.col-5-sm {
+  width: 37.66%;
+}
+
+.col-6-sm {
+  width: 46%;
+}
+
+.col-7-sm {
+  width: 54.33%;
+}
+
+.col-8-sm {
+  width: 62.66%;
+}
+
+.col-9-sm {
+  width: 71%;
+}
+
+.col-10-sm {
+  width: 79.33%;
+}
+
+.col-11-sm {
+  width: 87.66%;
+}
+
+.col-12-sm {
+  width: 96%;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.hidden-sm {
+  display: none;
+}
+
+@media only screen and (min-width: 540px) {
+  .container {
+    width: 84%;
+  }
+
+  .col-1-m {
+    width: 4.33%;
+  }
+
+  .col-2-m {
+    width: 12.66%;
+  }
+
+  .col-3-m {
+    width: 21%;
+  }
+
+  .col-4-m {
+    width: 29.33%;
+  }
+
+  .col-5-m {
+    width: 37.66%;
+  }
+
+  .col-6-m {
+    width: 46%;
+  }
+
+  .col-7-m {
+    width: 54.33%;
+  }
+
+  .col-8-m {
+    width: 62.66%;
+  }
+
+  .col-9-m {
+    width: 71%;
+  }
+
+  .col-10-m {
+    width: 79.33%;
+  }
+
+  .col-11-m {
+    width: 87.66%;
+  }
+
+  .col-12-m {
+    width: 96%;
+  }
+
+  .hidden-m {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 720px) {
+  .col-1,
+  .col-1-l {
+    width: 4.33%;
+  }
+
+  .col-2,
+  .col-2-l {
+    width: 12.66%;
+  }
+
+  .col-3,
+  .col-3-l {
+    width: 21%;
+  }
+
+  .col-4,
+  .col-4-l {
+    width: 29.33%;
+  }
+
+  .col-5,
+  .col-5-l {
+    width: 37.66%;
+  }
+
+  .col-6,
+  .col-6-l {
+    width: 46%;
+  }
+
+  .col-7,
+  .col-7-l {
+    width: 54.33%;
+  }
+
+  .col-8,
+  .col-8-l {
+    width: 62.66%;
+  }
+
+  .col-9,
+  .col-9-l {
+    width: 71%;
+  }
+
+  .col-10,
+  .col-10-l {
+    width: 79.33%;
+  }
+
+  .col-11,
+  .col-11-l {
+    width: 87.66%;
+  }
+
+  .col-12,
+  .col-12-l {
+    width: 96%;
+  }
+
+  /* NESTED GRID */
+
+  [class^="n-col"] {
+    margin: 8px 4.3478%;
+  }
+
+  .n-col-1 {
+    width: 9.4202%
+  }
+
+  .n-col-2 {
+    width: 27.5360%
+  }
+
+  .n-col-3 {
+    width: 45.6519%
+  }
+
+  .n-col-4 {
+    width: 63.7677%
+  }
+
+  .n-col-5 {
+    width: 81.8836%
+  }
+
+  .n-col-6 {
+    width: 99.9999%
+  }
+
+  /* END NESTED GRID */
+
+  .hidden-sm,
+  .hidden-m {
+    display: block;
+  }
+
+  .hidden-l {
+    display: none;
+  }
+
+  .center-sm {
+    margin: 0 2% 0 2%;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .container {
+    width: 84%;
+    max-width: 1600px;
+  }
+
+  .col-1-xl {
+    width: 4.33%;
+  }
+
+  .col-2-xl {
+    width: 12.66%;
+  }
+
+  .col-3-xl {
+    width: 21%;
+  }
+
+  .col-4-xl {
+    width: 29.33%;
+  }
+
+  .col-5-xl {
+    width: 37.66%;
+  }
+
+  .col-6-xl {
+    width: 46%;
+  }
+
+  .col-7-xl {
+    width: 54.33%;
+  }
+
+  .col-8-xl {
+    width: 62.66%;
+  }
+
+  .col-9-xl {
+    width: 71%;
+  }
+
+  .col-10-xl {
+    width: 79.33%;
+  }
+
+  .col-11-xl {
+    width: 87.66%;
+  }
+
+  .col-12-xl {
+    width: 96%;
+  }
+
+  .hidden-l {
+    display: block;
+  }
+
+}
