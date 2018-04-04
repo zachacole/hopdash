@@ -782,6 +782,13 @@ footer h4 {
   background-image: url('img/city-bos.jpg');
 }
 
+.img-city-sea {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url('img/city-sea.jpg');
+}
+
 /* ANIMATIONS */
 
 .show {
