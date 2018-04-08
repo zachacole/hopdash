@@ -768,7 +768,6 @@ footer h4 {
 }
 
 .img-city-sfo {
-  background-color: red;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -787,6 +786,13 @@ footer h4 {
   background-size: cover;
   background-position: center;
   background-image: url('img/city-sea.jpg');
+}
+
+.img-city-boulder {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url('img/city-boulder.jpg');
 }
 
 /* ANIMATIONS */
