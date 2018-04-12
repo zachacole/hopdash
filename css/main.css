@@ -795,6 +795,13 @@ footer h4 {
   background-image: url('img/city-boulder.jpg');
 }
 
+.img-city-austin {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url('img/city-austin.jpg');
+}
+
 /* ANIMATIONS */
 
 .show {
