@@ -1,0 +1,22 @@
+{
+  "name": "hopdash",
+  "version": "1.0.0",
+  "description": "Your running tour guide",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server '.' --files '.' --reload-debounce 500"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelconde/hopdash.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaelconde/hopdash/issues"
+  },
+  "homepage": "https://github.com/rafaelconde/hopdash#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6"
+  }
+}
